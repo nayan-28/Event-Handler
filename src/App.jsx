@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
+import Counter from "./Counter";
 
 function App() {
   const handleClick = () => {
@@ -19,6 +20,7 @@ function App() {
     <>
       <div className="card">
         <h3>React Core concept</h3>
+        <Counter></Counter>
         <button onClick={handleClick}>Click Me</button>
         <button onClick={handleClick2}>Click 2</button>
         <button onClick={() => addFive(2)}>Add Five</button>
